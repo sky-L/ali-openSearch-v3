@@ -1,0 +1,16 @@
+{
+    "name": "skylee/ali-open-search-v3",
+    "description": "openSearch v3",
+    "authors": [
+        {
+            "name": "likai960",
+            "email": "likai960@emao.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+         "classmap": [
+            "src"
+        ]
+    }   
+}
