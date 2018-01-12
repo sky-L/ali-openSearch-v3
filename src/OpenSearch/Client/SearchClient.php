@@ -58,8 +58,7 @@ class SearchClient implements OpenSearchSearcherServiceIf {
         $path = self::getPath($searchParams);
         $builder = new UrlParamsBuilder($searchParams);
  
-echo '<pre>';
-print_r($builder);
+ 
 
         return $this->openSearchClient->get($path, $builder->getHttpParams());
     }
@@ -67,7 +66,7 @@ print_r($builder);
     private static function getPath($searchParams) {
         $appNames = isset($searchParams->config->appNames) ? implode(',', $searchParams->config->appNames) : '';
         $appNames = "seo";
-        var_dump($appNames);
+      
         return sprintf(self::SEARCH_API_PATH, $appNames);
     }
 }
